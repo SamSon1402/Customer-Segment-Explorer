@@ -1,0 +1,367 @@
+/* Retro Gaming Style CSS for Streamlit */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:wght@400;700&display=swap');
+
+/* Base styling */
+body {
+    background-color: #0c0c0c;
+    color: #33ff00;
+    font-family: 'Space Mono', monospace;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'VT323', monospace !important;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0px #ff00ff;
+    color: #33ff00;
+}
+
+h1 {
+    font-size: 3.5rem !important;
+    border-bottom: 4px solid #ff00ff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+    border-left: 4px solid #00ffff;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2rem !important;
+    color: #ffff00;
+}
+
+/* Containers styling */
+.stApp {
+    background-color: #0c0c0c;
+}
+
+.element-container, div.stButton, div.stDownloadButton {
+    border: 2px solid #33ff00;
+    border-radius: 0px !important;
+    padding: 5px;
+    box-shadow: 5px 5px 0px #ff00ff;
+    margin-bottom: 25px !important;
+    background-color: #1a1a1a;
+}
+
+/* Block style for metrics */
+div.css-1xarl3l {
+    background-color: #1a1a1a;
+    border: 2px solid #ffcc00;
+    padding: 10px;
+    box-shadow: 5px 5px 0px #00ffff;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #1a1a1a;
+    border-right: 4px solid #ff00ff;
+}
+
+/* CRITICAL SELECTBOX STYLING - FIX FOR READABILITY */
+/* Container for selectbox */
+div.stSelectbox {
+    border: 2px solid #00ffff !important;
+    box-shadow: 4px 4px 0px #ff00ff !important;
+    background-color: #1a1a1a !important;
+    margin-bottom: 15px !important;
+}
+
+/* Label text */
+div.stSelectbox label, .stSelectbox p, .sidebar .stSelectbox span, .stSelectbox div {
+    color: #33ff00 !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px #000000;
+}
+
+/* The selectbox itself */
+div.stSelectbox > div[data-baseweb="select"] {
+    background-color: #222222 !important;
+}
+
+/* The selectbox text */
+div.stSelectbox > div[data-baseweb="select"] span {
+    color: #000000 !important;
+    font-weight: bold !important;
+    background-color: #33ff00 !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 18px !important;
+}
+
+/* The dropdown arrow */
+div.stSelectbox svg {
+    color: #ff00ff !important;
+    background-color: #000000 !important;
+    border-radius: 3px !important;
+}
+
+/* The dropdown menu */
+div[role="listbox"] {
+    background-color: #000000 !important;
+    border: 2px solid #ff00ff !important;
+}
+
+/* Dropdown option items */
+div[role="listbox"] ul li, div[data-baseweb="menu"] ul li, div[data-baseweb="select-dropdown"] ul li {
+    color: #33ff00 !important;
+    background-color: #000000 !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 18px !important;
+}
+
+/* Selected or hovered dropdown item */
+div[role="listbox"] ul li:hover, div[role="listbox"] ul li[aria-selected="true"] {
+    background-color: #333333 !important;
+    color: #00ffff !important;
+}
+
+/* Slider */
+.stSlider > div {
+    background-color: #1a1a1a !important;
+}
+
+/* Pixel-style buttons */
+.stButton button {
+    font-family: 'VT323', monospace !important;
+    font-size: 1.5rem !important;
+    background-color: #33ff00 !important;
+    color: #000000 !important;
+    border: 3px solid #ffffff !important;
+    border-radius: 0px !important;
+    box-shadow: 4px 4px 0px #ff00ff !important;
+    padding: 5px 20px !important;
+    transition: transform 0.1s !important;
+}
+
+.stButton button:active {
+    transform: translate(4px, 4px) !important;
+    box-shadow: none !important;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    font-family: 'VT323', monospace !important;
+    font-size: 1.3rem !important;
+    color: #ffcc00 !important;
+    background-color: #1a1a1a !important;
+    border: 2px solid #ffcc00 !important;
+    border-radius: 0px !important;
+}
+
+.streamlit-expanderContent {
+    border: 2px solid #ffcc00 !important;
+    border-top: none !important;
+    background-color: #1a1a1a !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    font-family: 'VT323', monospace !important;
+    font-size: 1.2rem !important;
+    background-color: #1a1a1a !important;
+    border: 2px solid #00ffff !important;
+    border-radius: 0px !important;
+    padding: 5px 20px !important;
+    color: #00ffff !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #00ffff !important;
+    color: #000000 !important;
+}
+
+/* Tables */
+.stDataFrame {
+    border: 3px solid #ffcc00 !important;
+}
+
+.stDataFrame table {
+    border-collapse: separate !important;
+    border-spacing: 2px !important;
+    background-color: #1a1a1a !important;
+}
+
+.stDataFrame th {
+    background-color: #ff00ff !important;
+    color: #ffffff !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 1.2rem !important;
+    padding: 8px !important;
+    border: 2px solid #ffffff !important;
+}
+
+.stDataFrame td {
+    background-color: #2a2a2a !important;
+    color: #33ff00 !important;
+    font-family: 'Space Mono', monospace !important;
+    border: 1px solid #33ff00 !important;
+    padding: 5px !important;
+}
+
+/* Text elements */
+p, div, span {
+    font-family: 'Space Mono', monospace !important;
+    color: #ffffff;
+}
+
+code {
+    font-family: 'Space Mono', monospace !important;
+    border: 1px solid #33ff00 !important;
+    border-radius: 0px !important;
+    background-color: #1a1a1a !important;
+    padding: 5px !important;
+    color: #00ffff !important;
+}
+
+.stAlert {
+    border: 2px solid #ffcc00 !important;
+    border-radius: 0px !important;
+    box-shadow: 4px 4px 0px #ff00ff !important;
+}
+
+.stAlert p {
+    color: #ffcc00 !important;
+}
+
+a {
+    color: #00ffff !important;
+    text-decoration: none !important;
+    border-bottom: 2px solid #00ffff !important;
+}
+
+a:hover {
+    color: #ff00ff !important;
+    border-bottom: 2px solid #ff00ff !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border: 2px solid #33ff00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #33ff00;
+    border: 2px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffff;
+}
+
+/* Custom pixel divider */
+.pixel-divider {
+    height: 5px;
+    background: repeating-linear-gradient(
+        to right,
+        #ff00ff,
+        #ff00ff 10px,
+        #00ffff 10px,
+        #00ffff 20px,
+        #33ff00 20px,
+        #33ff00 30px,
+        #ffcc00 30px,
+        #ffcc00 40px
+    );
+    margin: 30px 0;
+}
+
+/* Game-like info box */
+.game-info-box {
+    border: 4px solid #33ff00;
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 8px 8px 0px #ff00ff;
+    position: relative;
+}
+
+.game-info-box::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px dashed #00ffff;
+    pointer-events: none;
+}
+
+/* Game-like button styling */
+.game-button {
+    display: inline-block;
+    font-family: 'VT323', monospace !important;
+    font-size: 1.5rem !important;
+    background-color: #33ff00;
+    color: #000000;
+    border: 3px solid #ffffff;
+    border-radius: 0px;
+    box-shadow: 5px 5px 0px #ff00ff;
+    padding: 10px 30px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.game-button:hover {
+    background-color: #00ffff;
+}
+
+.game-button:active {
+    transform: translate(5px, 5px);
+    box-shadow: none;
+}
+
+/* MultiSelect styling */
+.stMultiSelect label {
+    color: #33ff00 !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 18px !important;
+}
+
+.stMultiSelect [data-baseweb="tag"] {
+    background-color: #ff00ff !important;
+    border: 1px solid #ffffff !important;
+}
+
+.stMultiSelect [data-baseweb="tag"] span {
+    color: #ffffff !important;
+    font-family: 'VT323', monospace !important;
+}
+
+/* Make inputs more visible */
+input, textarea {
+    color: #000000 !important;
+    background-color: #33ff00 !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 18px !important;
+    border: 2px solid #ffffff !important;
+}
+
+/* Radio buttons */
+.stRadio label {
+    color: #33ff00 !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 18px !important;
+}
